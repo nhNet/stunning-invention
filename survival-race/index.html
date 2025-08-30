@@ -1,18 +1,17 @@
-<!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Survival Race</title>
-    <script>
+    <!-- <script>
 		if (window.self === window.top) {
 		    var gLoc = window.location.pathname;
 		    var gPath = gLoc.substring(0, gLoc.lastIndexOf('/'));
 		    var gName = gPath.substring(gPath.lastIndexOf("/") + 1);
 		    window.location.replace('../../../../' + gName + '-game/');
 		}
-	</script>
+	</script> -->
     <style>
       html,
       body {
@@ -48,8 +47,8 @@
     </style>
   </head>
   <body>
-    <div id="gameContainer">
-      <canvas id="unity-canvas" data-pixel-art=""></canvas>
+    <div id="gameContainer" style="width: 683px; height: 384px; top: 0px; left: 1px;">
+      <canvas id="unity-canvas" data-pixel-art="" style="background: linear-gradient(to right, white, white 100%, transparent 100%, transparent) center center / 100% 1rem no-repeat; width: 683px; height: 384px; cursor: default;" width="1366" height="768"></canvas>
       <script src="Build/yandexBrotli.loader.js"></script>
       <script>
         let myGameInstance = null;
@@ -191,5 +190,4 @@
         onResize();
       </script>
     </div>
-  </body>
-</html>
+  </body></html>
