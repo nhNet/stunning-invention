@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Pacman</title>
+<script>
+	/* DISABLED REDIRECT:
+if (window.self === window.top) {
+	    var gLoc = window.location.pathname;
+	    var gPath = gLoc.substring(0, gLoc.lastIndexOf('/'));
+	    var gName = gPath.substring(gPath.lastIndexOf("/") + 1);
+	    window.location.replace('../../../../' + gName + '-game/');
+	}
+*/
+</script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="180x180" href="images/pacman-game-icon-180.png" />
+<link rel="stylesheet" type="text/css" href="./build/core-game-site.css" />
+<link rel="stylesheet" href="./build/app.css?v=1.1.1" />
+<style id="" media="all">/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+
+<script src="./js/screenfull.min.js"></script>
+<script src="build/app.js?v=1.1.2"></script>
+<script>
+	window.addEventListener("keydown", function(e) {
+		// arrow keys
+		if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+			e.preventDefault();
+		}
+	}, false);
+</script>
+</head>
+<body>
+<div id="full-page-container">
+<header>
+<div id="header-message"><div>
+</header>
+<main>
+<div id="game-container">
+<img id="backdrop" class="backdrop" src="./app/style/graphics/backdrop.png">
+<div id="fps-display" class="fps-display"></div>
+<div id="preload-div" class="preload-div"></div>
+<div id="main-menu-container" class="main-menu-container">
+<img id="logo" class="logo" src="./app/style/graphics/pacman_logo.png">
+<button id="game-start" class="game-start">
+PLAY
+</button>
+</div>
+<div class="header-buttons">
+<button>
+<i id="pause-button" class="material-icons">
+pause
+</i>
+</button>
+<button>
+<i id="sound-button" class="material-icons"></i>
+</button>
+</div>
+<div id="paused-text" class="paused-text">
+PAUSED
+</div>
+<div id="game-ui" class="game-ui">
+<div id="row-top" class="row top">
+<div class="column _25">
+<div class="one-up">1UP</div>
+<div id="points-display"></div>
+</div>
+<div class="column _50">
+<div>HIGH SCORE</div>
+<div id="high-score-display"></div>
+</div>
+</div>
+<div id="maze" class="maze">
+<img id="maze-img" class="maze-img" src="./app/style/graphics/spriteSheets/maze/maze_blue.svg">
+<div id="maze-cover" class="maze-cover"></div>
+<div id="dot-container"></div>
+<p id="pacman" class="pacman"></p>
+<p id="pacman-arrow" class="pacman"></p>
+<p id="clyde" class="ghost"></p>
+<p id="inky" class="ghost"></p>
+<p id="pinky" class="ghost"></p>
+<p id="blinky" class="ghost"></p>
+</div>
+<div id="bottom-row" class="row bottom">
+<div id="extra-lives" class="extra-lives"></div>
+<div id="fruit-display" class="fruit-display"></div>
+</div>
+</div>
+<div id="movement-buttons" class="movement-buttons">
+<div class="row">
+<button id="button-up" class="button-up">
+<i class="material-icons">keyboard_arrow_up</i>
+</button>
+</div>
+<div class="row">
+<button id="button-left" class="button-left">
+<i class="material-icons">keyboard_arrow_left</i>
+</button>
+<button id="button-right" class="button-right">
+<i class="material-icons">keyboard_arrow_right</i>
+</button>
+</div>
+<div class="row">
+<button id="button-down" class="button-down">
+<i class="material-icons">keyboard_arrow_down</i>
+</button>
+</div>
+</div>
+<div id="left-cover" class="loading-cover left"></div>
+<div id="right-cover" class="loading-cover right"></div>
+<div id="loading-container" class="loading-container">
+<div id="loading-pacman" class="loading-pacman"></div>
+<div id="loading-dot-mask" class="loading-dot-mask"></div>
+<div class="loading-dot _5"></div>
+<div class="loading-dot _10"></div>
+<div class="loading-dot _15"></div>
+<div class="loading-dot _20"></div>
+<div class="loading-dot _25"></div>
+<div class="loading-dot _30"></div>
+<div class="loading-dot _35"></div>
+<div class="loading-dot _40"></div>
+<div class="loading-dot _45"></div>
+<div class="loading-dot _50"></div>
+<div class="loading-dot _55"></div>
+<div class="loading-dot _60"></div>
+<div class="loading-dot _65"></div>
+<div class="loading-dot _70"></div>
+<div class="loading-dot _75"></div>
+<div class="loading-dot _80"></div>
+<div class="loading-dot _85"></div>
+<div class="loading-dot _90"></div>
+<div class="loading-dot _95"></div>
+</div>
+<div id="error-message" class="error-message">
+<div class="header">
+<div>OOPS!</div>
+<div class="error-pacman"></div>
+</div>
+<div class="body">
+We were unable to load the images/sounds needed to play the game.</br></br>
+This could be due to a poor connection, a strict network policy, or
+by playing on an unsupported browser.
+</div>
+</div>
+<script>
+        window.onload = () => {
+          let gameCoordinator = new GameCoordinator();
+        }
+      </script>
+</div>
+</main>
+</div>
+</body>
+</html>
