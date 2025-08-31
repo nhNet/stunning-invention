@@ -35,19 +35,19 @@ gdsdk= function() {
   // ***** UTILS *****
   function loadJS(FILE_URL, callback) {
     let scriptEle = document.createElement("script");
-  
+
     scriptEle.setAttribute("src", FILE_URL);
     scriptEle.setAttribute("type", "text/javascript");
     scriptEle.setAttribute("async", true);
-  
+
     document.body.appendChild(scriptEle);
-    
+
     // Success
     scriptEle.addEventListener("load", () => {
       console.log("--fx--gdsdk--loadJS Done--");
       callback(true);
     });
-    
+
      // Error
     scriptEle.addEventListener("error", () => {
       console.log("--fx--gdsdk--loadJS Error--");
@@ -61,7 +61,7 @@ gdsdk= function() {
       resolve(true);
     });
   };
-  
+
   // ***** ADS *****
   this.AdType= {
     "Rewarded": "rewarded",
@@ -86,13 +86,13 @@ gdsdk= function() {
       resolve(true);
     });
   }
-  
+
   this.cancelAd= function() {
     return new Promise((resolve, reject)=> {
       resolve(true);
     });
   };
-  
+
   this.showAd= function (adType) {
     console.log("--gdsdk--showAd--", adType, arguments);
     if (adType== "rewarded") {
@@ -123,7 +123,7 @@ gdsdk= function() {
       });
     } else {
       return new Promise((resolve, reject)=> {
-        loadJS("https://www.ubg235.com/ads/commercial.js", (success)=> {
+        loadJS("ads/commercial.js", (success)=> {
           window.GD_OPTIONS.onEvent({
             name: "SDK_GAME_START",
             message: "No Message",
@@ -143,10 +143,10 @@ gdsdk= function() {
           message: "Reward Skip!",
         });
         if (success) {
-            console.log("--fx--showBanner--Done--");            
+            console.log("--fx--showBanner--Done--");
             resolve(true);
           } else {
-            console.log("--fx--showBanner--Rejected--");            
+            console.log("--fx--showBanner--Rejected--");
             reject(false);
           }
       });
@@ -157,7 +157,7 @@ gdsdk= function() {
   this.sendEvent= function() {
     console.log("--gdsdk--sendEvent--", arguments);
   }
-  
+
   this.openConsole= function() {
     console.log("--gdsdk--openConsole--", arguments);
   };
@@ -175,8 +175,8 @@ gdsdk= function() {
       "name": "SDK_READY",
       "message": "Everything is ready.",
       "status": "success"
-    });  
-  } catch (e) {}  
+    });
+  } catch (e) {}
 };
 
 gdsdk= new gdsdk();
@@ -208,12 +208,12 @@ xlocation= new Proxy(location, {
 
 xwindow = new Proxy(window, {
   get: function(target, property, receiver) {
-    // console.log("--fx--xWindow--property--", property, receiver);    
+    // console.log("--fx--xWindow--property--", property, receiver);
     if (typeof target[property] == "function") {
       return (...args) => target[property].apply(target,args);
     } else {
       if (property== "location") {
-        return target["xlocation"];        
+        return target["xlocation"];
       }
       // console.log("--fx--xwindow--targetObj--", targetObj);
       return target[property];
