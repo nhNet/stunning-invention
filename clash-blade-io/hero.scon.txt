@@ -1,0 +1,1011 @@
+{
+	"entity": [
+		{
+			"animation": [
+				{
+					"id": 0,
+					"interval": 100,
+					"length": 500,
+					"looping": "false",
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 0
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 1
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 26.56505100000004,
+										"abs_pivot_x": 0.487179,
+										"abs_pivot_y": 0.12886600000000004,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -30.999999826794692,
+										"abs_y": -51.00000006771855,
+										"file": 0,
+										"folder": 1,
+										"id": 0,
+										"key": 0,
+										"name": "weapon1",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "0"
+									}
+								]
+							}
+						]
+					},
+					"name": "idle",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"bone": {
+										"angle": 90,
+										"y": -20
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "body",
+							"obj": 0,
+							"object_type": "bone"
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"bone": {
+										"angle": 21.370622000000026,
+										"x": 68,
+										"y": 32
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "weapon",
+							"obj": 1,
+							"object_type": "bone"
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 275.194429,
+										"file": 0,
+										"folder": 1,
+										"x": 2.429329,
+										"y": -2.024441
+									},
+									"spin": 0
+								}
+							],
+							"name": "weapon1",
+							"obj": 2
+						}
+					]
+				},
+				{
+					"id": 1,
+					"interval": 100,
+					"length": 500,
+					"looping": "false",
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 0
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 1
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 26.56505100000004,
+										"abs_pivot_x": 0.487179,
+										"abs_pivot_y": 0.12886600000000004,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -30.999999826794692,
+										"abs_y": -51.00000006771855,
+										"file": 0,
+										"folder": 1,
+										"id": 0,
+										"key": 0,
+										"name": "weapon1",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "0"
+									}
+								]
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 0
+									},
+									{
+										"id": 1,
+										"key": 1,
+										"parent": 0,
+										"timeline": 1
+									}
+								],
+								"id": 1,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "0"
+									}
+								],
+								"time": 250
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 1,
+										"timeline": 0
+									},
+									{
+										"id": 1,
+										"key": 2,
+										"parent": 0,
+										"timeline": 1
+									}
+								],
+								"id": 2,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 1,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "0"
+									}
+								],
+								"time": 500
+							}
+						]
+					},
+					"name": "swing",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"bone": {
+										"angle": 90,
+										"y": -20
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 90,
+										"y": -20
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "body",
+							"obj": 0,
+							"object_type": "bone"
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"bone": {
+										"angle": 21.370622000000026,
+										"x": 68,
+										"y": 32
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 74.348435,
+										"x": 30.481865,
+										"y": 51.738342
+									},
+									"id": 1,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 150.328002,
+										"x": -32.518135,
+										"y": 13.238342
+									},
+									"id": 2,
+									"spin": -1,
+									"time": 500
+								}
+							],
+							"name": "weapon",
+							"obj": 1,
+							"object_type": "bone"
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 275.194429,
+										"file": 0,
+										"folder": 1,
+										"x": 2.429329,
+										"y": -2.024441
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 275.194429,
+										"file": 0,
+										"folder": 1,
+										"x": 2.429329,
+										"y": -2.024441
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "weapon1",
+							"obj": 2
+						}
+					]
+				}
+			],
+			"character_map": [
+				{
+					"id": 0,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 1,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon2"
+				},
+				{
+					"id": 1,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 2,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon3"
+				},
+				{
+					"id": 2,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 3,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon4"
+				},
+				{
+					"id": 3,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 8,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon5"
+				},
+				{
+					"id": 4,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 9,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon6"
+				},
+				{
+					"id": 5,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 10,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon7"
+				},
+				{
+					"id": 6,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 11,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon8"
+				},
+				{
+					"id": 7,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 15,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon9"
+				},
+				{
+					"id": 8,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 16,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon10"
+				},
+				{
+					"id": 9,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 17,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon11"
+				},
+				{
+					"id": 10,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 18,
+							"target_folder": 1
+						}
+					],
+					"name": "weapon12"
+				},
+				{
+					"id": 11,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 4,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx1"
+				},
+				{
+					"id": 12,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 5,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx2"
+				},
+				{
+					"id": 13,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 6,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx3"
+				},
+				{
+					"id": 14,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 7,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx4"
+				},
+				{
+					"id": 15,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 12,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx5"
+				},
+				{
+					"id": 16,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 14,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx6"
+				},
+				{
+					"id": 17,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 13,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx7"
+				},
+				{
+					"id": 18,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 19,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx8"
+				},
+				{
+					"id": 19,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 20,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx9"
+				},
+				{
+					"id": 20,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 21,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx10"
+				},
+				{
+					"id": 21,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 22,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx11"
+				},
+				{
+					"id": 22,
+					"map": [
+						{
+							"file": 0,
+							"folder": 1,
+							"target_file": 23,
+							"target_folder": 1
+						}
+					],
+					"name": "weaponEx12"
+				}
+			],
+			"id": 0,
+			"name": "hero",
+			"obj_info": [
+				{
+					"h": 10,
+					"name": "hero_body",
+					"realname": "body",
+					"type": "bone",
+					"w": 57
+				},
+				{
+					"h": 10,
+					"name": "hero_weapon",
+					"realname": "weapon",
+					"type": "bone",
+					"w": 67.9412
+				},
+				{
+					"frames": [
+						{
+							"file": 0,
+							"folder": 1
+						},
+						{
+							"file": 1,
+							"folder": 1
+						},
+						{
+							"file": 2,
+							"folder": 1
+						},
+						{
+							"file": 3,
+							"folder": 1
+						},
+						{
+							"file": 8,
+							"folder": 1
+						},
+						{
+							"file": 9,
+							"folder": 1
+						},
+						{
+							"file": 10,
+							"folder": 1
+						},
+						{
+							"file": 11,
+							"folder": 1
+						},
+						{
+							"file": 15,
+							"folder": 1
+						},
+						{
+							"file": 16,
+							"folder": 1
+						},
+						{
+							"file": 17,
+							"folder": 1
+						},
+						{
+							"file": 18,
+							"folder": 1
+						},
+						{
+							"file": 4,
+							"folder": 1
+						},
+						{
+							"file": 5,
+							"folder": 1
+						},
+						{
+							"file": 6,
+							"folder": 1
+						},
+						{
+							"file": 7,
+							"folder": 1
+						},
+						{
+							"file": 12,
+							"folder": 1
+						},
+						{
+							"file": 14,
+							"folder": 1
+						},
+						{
+							"file": 13,
+							"folder": 1
+						},
+						{
+							"file": 19,
+							"folder": 1
+						},
+						{
+							"file": 20,
+							"folder": 1
+						},
+						{
+							"file": 21,
+							"folder": 1
+						},
+						{
+							"file": 22,
+							"folder": 1
+						},
+						{
+							"file": 23,
+							"folder": 1
+						}
+					],
+					"name": "hero_weapon1",
+					"realname": "weapon1",
+					"type": "sprite"
+				}
+			]
+		}
+	],
+	"folder": [
+		{
+			"file": [
+				{
+					"height": 220,
+					"id": 0,
+					"name": "character/hero 1.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 220,
+					"id": 1,
+					"name": "character/hero 2.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 220,
+					"id": 2,
+					"name": "character/hero 3.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 220,
+					"id": 3,
+					"name": "character/hero 4.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 221
+				},
+				{
+					"height": 220,
+					"id": 4,
+					"name": "character/hero 5.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 220,
+					"id": 5,
+					"name": "character/hero 6.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 166,
+					"id": 6,
+					"name": "character/hero shadow.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 166
+				},
+				{
+					"height": 220,
+					"id": 7,
+					"name": "character/hero7.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 220,
+					"id": 8,
+					"name": "character/hero8.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 220
+				},
+				{
+					"height": 319,
+					"id": 9,
+					"name": "character/slashEffect.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 634
+				},
+				{
+					"height": 124,
+					"id": 10,
+					"name": "character/swordEffect3.png",
+					"pivot_x": 0.5,
+					"pivot_y": 0.5,
+					"width": 163
+				},
+				{
+					"height": 175,
+					"id": 11,
+					"name": "character/swordEffect2.png",
+					"pivot_x": 0.5,
+					"pivot_y": 0.5,
+					"width": 97
+				},
+				{
+					"height": 121,
+					"id": 12,
+					"name": "character/swordEffect1.png",
+					"pivot_x": 0.5,
+					"pivot_y": 0.5,
+					"width": 132
+				}
+			],
+			"id": 0,
+			"name": "character"
+		},
+		{
+			"file": [
+				{
+					"height": 272,
+					"id": 0,
+					"name": "weapon/weapon1.png",
+					"pivot_x": 0.487179,
+					"pivot_y": 0.12886600000000004,
+					"width": 82
+				},
+				{
+					"height": 271,
+					"id": 1,
+					"name": "weapon/weapon2.png",
+					"pivot_x": 0.438095,
+					"pivot_y": 0.08474599999999999,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 2,
+					"name": "weapon/weapon3.png",
+					"pivot_x": 0.475806,
+					"pivot_y": 0.105263,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 3,
+					"name": "weapon/weapon4.png",
+					"pivot_x": 0.46789,
+					"pivot_y": 0.099715,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 4,
+					"name": "weapon/weaponEx1.png",
+					"pivot_x": 0.514706,
+					"pivot_y": 0.18960200000000005,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 5,
+					"name": "weapon/weaponEx2.png",
+					"pivot_x": 0.456376,
+					"pivot_y": 0.09883699999999995,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 6,
+					"name": "weapon/weaponEx3.png",
+					"pivot_x": 0.46988,
+					"pivot_y": 0.10818700000000003,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 7,
+					"name": "weapon/weaponEx4.png",
+					"pivot_x": 0.503472,
+					"pivot_y": 0.14722199999999996,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 8,
+					"name": "weapon/weapon5.png",
+					"pivot_x": 0.50641,
+					"pivot_y": 0.177122,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 9,
+					"name": "weapon/weapon6.png",
+					"pivot_x": 0.487179,
+					"pivot_y": 0.18081199999999997,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 10,
+					"name": "weapon/weapon7.png",
+					"pivot_x": 0.512821,
+					"pivot_y": 0.132841,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 11,
+					"name": "weapon/weapon8.png",
+					"pivot_x": 0.50641,
+					"pivot_y": 0.12915100000000002,
+					"width": 156
+				},
+				{
+					"height": 271,
+					"id": 12,
+					"name": "weapon/weaponEx5.png",
+					"pivot_x": 0.448718,
+					"pivot_y": 0.12915100000000002,
+					"width": 156
+				},
+				{
+					"height": 272,
+					"id": 13,
+					"name": "weapon/weaponEx7.png",
+					"pivot_x": 0.47561,
+					"pivot_y": 0.13235299999999994,
+					"width": 82
+				},
+				{
+					"height": 271,
+					"id": 14,
+					"name": "weapon/weaponEx6.png",
+					"pivot_x": 0.49359,
+					"pivot_y": 0.143911,
+					"width": 156
+				},
+				{
+					"height": 388,
+					"id": 15,
+					"name": "weapon/weapon9.png",
+					"pivot_x": 0.502242,
+					"pivot_y": 0.08505200000000002,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 16,
+					"name": "weapon/weapon10.png",
+					"pivot_x": 0.479821,
+					"pivot_y": 0.170103,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 17,
+					"name": "weapon/weapon11.png",
+					"pivot_x": 0.493274,
+					"pivot_y": 0.10824699999999998,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 18,
+					"name": "weapon/weapon12.png",
+					"pivot_x": 0.502242,
+					"pivot_y": 0.12113399999999996,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 19,
+					"name": "weapon/weaponEx8.png",
+					"pivot_x": 0.493274,
+					"pivot_y": 0.10051500000000002,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 20,
+					"name": "weapon/weaponEx9.png",
+					"pivot_x": 0.466368,
+					"pivot_y": 0.13402099999999995,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 21,
+					"name": "weapon/weaponEx10.png",
+					"pivot_x": 0.502242,
+					"pivot_y": 0.12371100000000002,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 22,
+					"name": "weapon/weaponEx11.png",
+					"pivot_x": 0.457399,
+					"pivot_y": 0.15206200000000003,
+					"width": 223
+				},
+				{
+					"height": 388,
+					"id": 23,
+					"name": "weapon/weaponEx12.png",
+					"pivot_x": 0.497758,
+					"pivot_y": 0.14433000000000007,
+					"width": 223
+				}
+			],
+			"id": 1,
+			"name": "weapon"
+		}
+	],
+	"generator": "BrashMonkey Spriter",
+	"generator_version": "r11",
+	"scon_version": "1.0"
+}
