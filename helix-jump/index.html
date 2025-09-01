@@ -18,15 +18,15 @@ if (window.self === window.top) {
 	</script>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-	
-	function InitApi(_appId) 
+
+	function InitApi(_appId)
     {
 		gameKey = _appId;
 		userId = "";
-	
+
 		window["GD_OPTIONS"] = {
 			"debug": false, // Enable debugging console. This will set a value in local storage as well, remove this value if you don't want debugging at all. You can also call it by running gdsdk.openConsole() within your browser console.
 			"gameId": gameKey, // Your gameId which is unique for each one of your games; can be found at your Gamedistribution.com account.
@@ -39,42 +39,42 @@ if (window.self === window.top) {
 					case "SDK_GAME_PAUSE":
 						gameInstance.SendMessage('GameDistribution', 'PauseGame');
 						break;
-					case "SDK_ERROR":					
+					case "SDK_ERROR":
 						break;
 				}
 			},
 		};
-		
+
 		(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
 			js = d.createElement(s);
 			js.id = id;
-			js.src = '/main.min.js';
+			js.src = 'main.min.js';
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'gamedistribution-jssdk'));
     }
-    
-    function ExternEval() 
+
+    function ExternEval()
     {
         console.log('ExternEval');
-		
+
 		//gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
-       
+
 		 if (typeof gdsdk !== "undefined")
-		  {	  
-			gdsdk.showBanner(); 
+		  {
+			gdsdk.showBanner();
 		  }
     }
-	
-	function PreloadRewarded() 
+
+	function PreloadRewarded()
     {
         console.log('PreloadRewarded');
-		
+
 		//gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
-       
+
 		if (typeof gdsdk !== "undefined")
-		{	  
+		{
 			if (gdsdk !== 'undefined' && gdsdk.preloadAd !== 'undefined') {
 			  gdsdk
 				.preloadAd('rewarded')
@@ -90,29 +90,29 @@ if (window.self === window.top) {
 
 		}
     }
-	
-	function ShowRewarded() 
+
+	function ShowRewarded()
     {
         console.log('ShowRewarded');
-		
+
 		//gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
-       
-		 if (gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') 
+
+		 if (gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined')
 		 {
 			gdsdk.showAd('rewarded');
 		  }
     }
-	
+
 	InitApi("630d7b91a96145949f86128ce8f1c4eb");
-	
+
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json", {onProgress: UnityProgress});
-	  
+
 	    function FitScreen(){
        var w=480;
        var h=768;
        var availWidth = window.innerWidth;
        var availHeight = window.innerHeight - 10;
-	   
+
        var canvas = document.getElementById("#canvas");
        if(availWidth/availHeight>w/h){
          height = availHeight;
@@ -121,13 +121,13 @@ if (window.self === window.top) {
          width = availWidth;
          height = width*h/w;
       }
-	  
+
       canvas.width = width;
       canvas.height = height;
-	  
+
        document.getElementById("gameContainer").style.width=width + "px";
        document.getElementById("gameContainer").style.height=height + "px";
-	   
+
     }
 
     </script>
