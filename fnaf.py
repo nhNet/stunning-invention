@@ -1,36 +1,130 @@
 import os
+import sys
+import time
+import math
 import requests
 from urllib.parse import urlparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from tqdm import tqdm
 
-# your base URL prefix
-BASE = "https://nhnet.github.io/stunning-invention/football-legends/"
+# -------- Config --------
+BASE = "https://watchdocumentaries.com/wp-content/uploads/games/friday-night-funkin/"
+OUT_DIR = "friday-night-funkin"
+URLS_TXT = "filelist.txt"
 
-# base output folder
-OUT_DIR = "football-legends"
+MAX_WORKERS = 8          # number of concurrent downloads
+RETRIES = 3              # attempts per file
+TIMEOUT = 30             # seconds per request
+CHUNK = 1024 * 64        # 64KB chunks
+# ------------------------
+
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# read urls
-with open("filelist.txt", "r", encoding="utf-8") as f:
-    urls = [line.strip() for line in f if line.strip().startswith(BASE)]
+# Read and filter URLs by base, strip whitespace & querystrings
+with open(URLS_TXT, "r", encoding="utf-8") as f:
+    raw_urls = [line.strip() for line in f if line.strip()]
 
-print(f"Found {len(urls)} valid URLs")
+urls = []
+for u in raw_urls:
+    if not u.startswith(BASE):
+        continue
+    # drop query string
+    u_no_q = u.split("?", 1)[0]
+    urls.append(u_no_q)
 
-for url in urls:
+# De-duplicate while preserving order
+seen = set()
+filtered_urls = []
+for u in urls:
+    if u not in seen:
+        seen.add(u)
+        filtered_urls.append(u)
+
+print(f"Found {len(filtered_urls)} valid URLs after filtering & dedupe.")
+
+
+def download_one(url: str) -> tuple[str, bool, str]:
+    """
+    Download a single URL into OUT_DIR mirroring the relative path (after BASE).
+    Returns (relative_path, success, message).
+    """
     try:
-        # remove the base prefix so we only get the relative path
-        rel_path = url.replace(BASE, "").lstrip("/")
+        rel_path = url.replace(BASE, "", 1).lstrip("/")
         out_path = os.path.join(OUT_DIR, rel_path)
 
-        # make sure the parent folder exists
+        # ensure parent folder exists
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
-        # download
-        r = requests.get(url.split("?")[0], timeout=30)
-        if r.status_code == 200:
-            with open(out_path, "wb") as out:
-                out.write(r.content)
-            print(f"✔ Downloaded {rel_path}")
-        else:
-            print(f"✖ Failed {rel_path}: HTTP {r.status_code}")
+        # skip if already downloaded (non-empty file)
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+            return (rel_path, True, "skipped (exists)")
+
+        # download with retries
+        last_err = None
+        for attempt in range(1, RETRIES + 1):
+            try:
+                with requests.get(url, stream=True, timeout=TIMEOUT) as r:
+                    if r.status_code != 200:
+                        last_err = f"HTTP {r.status_code}"
+                        # small backoff on server errors
+                        if r.status_code >= 500 and attempt < RETRIES:
+                            time.sleep(1.2 * attempt)
+                            continue
+                        break
+
+                    # write to temp, then move
+                    tmp_path = out_path + ".part"
+                    with open(tmp_path, "wb") as out:
+                        for chunk in r.iter_content(chunk_size=CHUNK):
+                            if chunk:
+                                out.write(chunk)
+                    os.replace(tmp_path, out_path)
+                    return (rel_path, True, "downloaded")
+            except Exception as e:
+                last_err = str(e)
+                if attempt < RETRIES:
+                    # exponential backoff
+                    time.sleep(1.2 * attempt)
+                else:
+                    break
+
+        return (rel_path, False, last_err or "failed")
     except Exception as e:
-        print(f"✖ Error {url}: {e}")
+        return ("?", False, f"{type(e).__name__}: {e}")
+
+
+# Threaded download with a single overall progress bar (by files)
+successes = 0
+skips = 0
+failures = 0
+messages = []
+
+with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool, tqdm(
+    total=len(filtered_urls),
+    unit="file",
+    desc="Downloading",
+    ncols=100,
+    leave=False,      # <- don't leave multiple bars behind
+    position=0,       # <- always update the same line
+    dynamic_ncols=True
+) as pbar:
+    futures = {pool.submit(download_one, u): u for u in filtered_urls}
+    for fut in as_completed(futures):
+        rel_path, ok, msg = fut.result()
+        if ok:
+            if "skipped" in msg:
+                skips += 1
+            else:
+                successes += 1
+        else:
+            failures += 1
+            messages.append(f"✖ {rel_path}: {msg}")
+        pbar.update(1)
+
+print(f"\nDone. ✔ {successes} downloaded, ↻ {skips} skipped, ✖ {failures} failed.")
+if failures:
+    print("\nFailures:")
+    for m in messages[:50]:
+        print("  " + m)
+    if len(messages) > 50:
+        print(f"  ... and {len(messages) - 50} more")
