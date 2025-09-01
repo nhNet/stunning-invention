@@ -3,10 +3,10 @@ import requests
 from urllib.parse import urlparse
 
 # your base URL prefix
-BASE = "https://watchdocumentaries.com/wp-content/uploads/games/five-nights-at-freddys/"
+BASE = "https://watchdocumentaries.com/wp-content/uploads/games/five-nights-at-freddys-4/"
 
 # base output folder
-OUT_DIR = "five-nights-at-freddys"
+OUT_DIR = "five-nights-at-freddys-4"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # read urls
