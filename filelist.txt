@@ -1,14 +1,1 @@
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/TemplateData/style.css
-chrome-extension://ddhnhcgnlkhhnaihabaehmnhedmjpkoo/inject.js
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/TemplateData/unity-logo-dark.png
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/TemplateData/progress-bar-empty-dark.png
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/TemplateData/progress-bar-full-dark.png
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.framework.js
-chrome-extension://fjoaledfpmneenckfbpdfhkmimnjocfa/csNotification.bundle.css
-https://fonts.googleapis.com/css?family=Lato
-https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.data
-chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css
-https://watchdocumentaries.com/wp-content/uploads/games/granny-2/TemplateData/favicon.ico
+https://watchdocumentaries.com/wp-content/uploads/games/friday-night-funkin/do%20NOT%20readme.txt?884968
