@@ -3,13 +3,13 @@ import sys
 import time
 import math
 import requests
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 # -------- Config --------
-BASE = "https://watchdocumentaries.com/wp-content/uploads/games/friday-night-funkin/"
-OUT_DIR = "friday-night-funkin"
+BASE = "https://watchdocumentaries.com/wp-content/uploads/games/granny/"
+OUT_DIR = "granny"
 URLS_TXT = "filelist.txt"
 
 MAX_WORKERS = 8          # number of concurrent downloads
@@ -50,6 +50,7 @@ def download_one(url: str) -> tuple[str, bool, str]:
     """
     try:
         rel_path = url.replace(BASE, "", 1).lstrip("/")
+        rel_path = unquote(rel_path)  # decode %20 etc into normal characters
         out_path = os.path.join(OUT_DIR, rel_path)
 
         # ensure parent folder exists
@@ -66,13 +67,11 @@ def download_one(url: str) -> tuple[str, bool, str]:
                 with requests.get(url, stream=True, timeout=TIMEOUT) as r:
                     if r.status_code != 200:
                         last_err = f"HTTP {r.status_code}"
-                        # small backoff on server errors
                         if r.status_code >= 500 and attempt < RETRIES:
                             time.sleep(1.2 * attempt)
                             continue
                         break
 
-                    # write to temp, then move
                     tmp_path = out_path + ".part"
                     with open(tmp_path, "wb") as out:
                         for chunk in r.iter_content(chunk_size=CHUNK):
@@ -83,7 +82,6 @@ def download_one(url: str) -> tuple[str, bool, str]:
             except Exception as e:
                 last_err = str(e)
                 if attempt < RETRIES:
-                    # exponential backoff
                     time.sleep(1.2 * attempt)
                 else:
                     break
@@ -104,8 +102,8 @@ with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool, tqdm(
     unit="file",
     desc="Downloading",
     ncols=100,
-    leave=False,      # <- don't leave multiple bars behind
-    position=0,       # <- always update the same line
+    leave=False,
+    position=0,
     dynamic_ncols=True
 ) as pbar:
     futures = {pool.submit(download_one, u): u for u in filtered_urls}
