@@ -12,11 +12,6 @@ from tqdm import tqdm
 
 # ------------ CONFIG ------------
 SLUGS = [
-    "sprinter",
-    "stickman-hook",
-    "subway-surfers",
-    "super-mario-bros",
-    "survival-race",
 ]
 GAME_BASE = "https://nhnet.github.io/stunning-invention/{slug}"
 
