@@ -12,7 +12,29 @@ from tqdm import tqdm
 
 # ------------ CONFIG ------------
 SLUGS = [
-    "word-wipe",
+    "fireboy-and-watergirl-1-in-the-forest-temple",
+    "fireboy-and-watergirl-2-in-the-light-temple",
+    "happy-wheels",
+    "tiny-fishing",
+    "snake-io",
+    "gun-mayhem-2",
+    "return-man-2",
+    "sprunki-incredibox",
+    "papas-pizzeria",
+    "bloxorz",
+    "creative-kill-chamber",
+    "1v1-lol",
+    "smash-karts",
+    "shell-shockers",
+    "zombs-royale",
+    "tetris",
+    "clicker-heroes",
+    "warfare-1944",
+    "age-of-war",
+    "dino-run",
+    "learn-to-fly",
+    "learn-to-fly-2",
+    "duck-life-4",
 ]
 GAME_BASE = "https://nhnet.github.io/stunning-invention/{slug}"
 
