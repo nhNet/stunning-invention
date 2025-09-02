@@ -1,7 +1,0 @@
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/main.js
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/resources/animate/spritesheet/Intro_bitmaps_0.png
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/resources/animate/spritesheet/Intro_shapes_0.png
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/resources/assets/config/config.json
-https://watchdocumentaries.com/wp-content/uploads/games/word-wipe/resources/assets/texts/en-US.txt

@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 # -------- Config --------
-OUT_DIR = "sprinter"
+OUT_DIR = "pixel-shooter"
 BASE = "https://watchdocumentaries.com/wp-content/uploads/games/"+OUT_DIR+"/"
 URLS_TXT = "filelist.txt"
 
