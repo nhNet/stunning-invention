@@ -1,2 +1,2 @@
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/Narrows/narrow_junction_a.glb
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/Narrows/narrow_junction_b.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/Narrows/narrow_start_a.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/Narrows/narrow_start_b.glb
