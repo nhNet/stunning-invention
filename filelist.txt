@@ -1,9 +1,2 @@
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/apartment.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/spacetest.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/crossgravity.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/windingpath.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/twistedroad.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/conefield.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/spacecanyon.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/coneycliffs.js
-https://watchdocumentaries.com/wp-content/uploads/games/ice-dodo/maps/everest.js
+
+https://watchdocumentaries.com/wp-content/uploads/games/minecraft/assets.epk
