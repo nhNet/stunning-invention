@@ -1,0 +1,17 @@
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/GameAnalytics.js
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/MonkeyMart.wasm
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/MonkeyMart_wasm.js
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/archive_files.json
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.arcd0
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.arcd1
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.arcd2
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.arci0
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.dmanifest0
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/archive/game.projectc0
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/bg_loading.png
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/dmloader.js
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/load_bar_bg.png
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/load_bar_fg.png
+https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/patch/js/poki-sdk.js

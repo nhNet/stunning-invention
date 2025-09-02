@@ -1,0 +1,18 @@
+cardtofoundation - when placing a card on 1 of the for foundations top right
+
+dealcards - when dealing cards from the stockpile to the wastepile but also 
+as an intro when dealing the cards (see .doc) 1 sound per card
+
+flipbackemptystockpile - when the stock is empty en you click on it to get te cards from waste to stock
+
+grabcard - when clicking on a card
+
+invalid - when placing a card on another card that dont match
+
+valid - match
+
+
+
+
+
+
