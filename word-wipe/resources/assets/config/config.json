@@ -1,0 +1,14 @@
+{
+  "restartGameOnGameEnd": true,
+  "pauseGameOnFocusLoss": true,
+  "linkToAvatarStorage": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-index/_arena-shared-content_/arkadium-avatars/subscription/",
+  "linkToFrameStorage": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-index/_arena-shared-content_/arkadium-frames/",
+  "arenasWithForbiddenWords": [
+    {
+      "arenaName": "games.washingtonpost.com",
+      "forbiddenWordsDictionary": "forbiddenWords.txt"
+    }
+  ],
+  "showArkadiumLogo":true,
+  "allowAds":true
+}

@@ -12,6 +12,13 @@ from tqdm import tqdm
 
 # ------------ CONFIG ------------
 SLUGS = [
+    "pixel-shooter",
+    "we-become-what-we-behold",
+    "wheelie-bike",
+    "word-wipe",
+    "wordle-unlimited",
+    "worlds-hardest-game",
+    "x-trench-run"
 ]
 GAME_BASE = "https://nhnet.github.io/stunning-invention/{slug}"
 
