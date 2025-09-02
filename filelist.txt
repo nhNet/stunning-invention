@@ -1,2 +1,13 @@
-https://watchdocumentaries.com/wp-content/uploads/games/pixel-shooter/assets/main/import/05/05c11a0ea.f3f4a.json
-https://watchdocumentaries.com/wp-content/uploads/games/pixel-shooter/assets/main/import/01/015d9eced.1d11b.json
+
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F0.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F1.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F2.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F3.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F4.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F5.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F6.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F7.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F8.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F9.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F10.txt
+https://watchdocumentaries.com/wp-content/uploads/games/retro-bowl/html5game/Names_F11.txt
