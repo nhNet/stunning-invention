@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<language name="en">
+		<play>PLAY</play>
+		<menu>Menu</menu>
+		<time>Time: </time>
+		<best>Best: </best>
+		<draw_1_card>DRAW 1 CARD</draw_1_card>
+		<draw_3_card>DRAW 3 CARDS</draw_3_card>
+		<HOW_TO_PLAY_FULL>The goal in this Solitaire game is to move all the cards to the four empty stacks in order from ace to king. You can choose to deal 1 card at a time or 3. 
+		</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>YOU WON!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>Score: </SCORE>
+		<TOTAL>TOTAL SCORE: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>		
+		<new_game>NEW GAME</new_game>
+		<restart_game>RESTART GAME</restart_game>
+		<sound_on>SOUND ON</sound_on>
+		<sound_off>SOUND OFF</sound_off>
+		<more_games>MORE GAMES</more_games>
+		<are_you_sure_new>Are you sure you want to start a new game? All progress will be lost!</are_you_sure_new>
+		<are_you_sure_restart>Are you sure you want to restart? All progress will be lost!</are_you_sure_restart>
+		<time_bonus>TIME BONUS: </time_bonus>		
+		<YES>YES</YES>
+		<NO>NO</NO>
+		<RESTART>RESTART</RESTART>		
+	</language>		
+	
+	<language name="nl">
+		<play>SPEEL</play>
+		<menu>MENU</menu>
+		<time>TIJD: </time>
+		<best>BESTE: </best>
+		<draw_1_card>DEEL 1 KAART</draw_1_card>
+		<draw_3_card>DEEL 3 KAARTEN</draw_3_card>
+		<HOW_TO_PLAY_FULL>Verplaats alle kaarten naar de 4 lege vakken, in volgorde van aas naar koning. Speel met 1 kaart of om het moeilijker te maken met 3 kaarten.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOE TE SPELEN</HOW_TO_PLAY>
+		<YOU_WIN>JE HEBT GEWONNEN!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>SCORE: </SCORE>
+		<TOTAL>TOTAAL: </TOTAL>
+		<GAME_OVER>VERLOREN!</GAME_OVER>			
+		<new_game>NIEUW SPEL</new_game>
+		<restart_game>HERSTART SPEL</restart_game>
+		<sound_on>GELUID AAN</sound_on>
+		<sound_off>GELUID UIT</sound_off>
+		<more_games>MEER GAMES</more_games>
+		<are_you_sure_new>Weet je zeker dat je een nieuw spel wilt starten? Alles gaat verloren.</are_you_sure_new>
+		<are_you_sure_restart>Weet je zeker dat je dit spel wilt herstarten? Alles gaat verloren.</are_you_sure_restart>
+		<time_bonus>TIJD BONUS: </time_bonus>	
+		<YES>JA</YES>
+		<NO>NEE</NO>
+		<RESTART>HERSTARTEN</RESTART>		
+	</language>	
+	
+	<language name="fr">
+		<play>PLAY</play>
+		<menu>MENU</menu>
+		<time>TEMPS: </time>
+		<best>REC.: </best>
+		<draw_1_card>1 CARTE</draw_1_card>
+		<draw_3_card>3 CARTES</draw_3_card>
+		<HOW_TO_PLAY_FULL>Le but de ce jeu de Solitaire est de déplacer toutes les cartes vers les colonnes vides, dans l'ordre de l'as au roi. Jouez avec 1 ou 3 cartes.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>VOUS AVEZ GAGNÉ!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>SCORE: </SCORE>
+		<TOTAL>SCORE TOTAL: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>		
+		<new_game>NOUVEAU JEU</new_game>
+		<restart_game>REDÉMARRER LE JEU</restart_game>
+		<sound_on>ALLUMER LE SON</sound_on>
+		<sound_off>ÉTEINDRE LE SON</sound_off>
+		<more_games>PLUS DE JEUX</more_games>
+		<are_you_sure_new>Vous êtes sûr de vouloir commencer une nouvelle partie ? Tout sera perdu.</are_you_sure_new>
+		<are_you_sure_restart>Vous êtes sûr de vouloir redémarrer le jeu ? Tout sera perdu.</are_you_sure_restart>
+		<time_bonus>BONUS TEMPS: </time_bonus>		
+		<YES>OUI</YES>
+		<NO>NON</NO>
+		<RESTART>RESTART</RESTART>			
+	</language>	
+		
+	<language name="de">
+		<play>PLAY</play>
+		<menu>MENÜ</menu>
+		<time>ZEIT: </time>
+		<best>BEST: </best>
+		<draw_1_card>1 KARTE</draw_1_card>
+		<draw_3_card>3 KARTEN</draw_3_card>
+		<HOW_TO_PLAY_FULL>Bewege alle Karten in die 4 leeren Fächer, in der Reihenfolge von Ass bis König. Du kannst mit einer oder mit drei Karten gleichzeitig spielen.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>DU HAST GEWONNEN!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>PUNKTE: </SCORE>
+		<TOTAL>GESAMTPUNKT: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>			
+		<new_game>NEUES SPIEL</new_game>
+		<restart_game>FANGE SPIEL NEU AN</restart_game>
+		<sound_on>TON AN</sound_on>
+		<sound_off>TON AUS</sound_off>
+		<more_games>MEHR SPIELE</more_games>
+		<are_you_sure_new>BIST DU DIR SICHER, DASS DU EIN NEUES SPIEL ANFANGEN MÖCHTEST? ALLES GEHT VERLOREN.</are_you_sure_new>
+		<are_you_sure_restart>BIST DU DIR SICHER, DASS DU DIESES SPIEL NEU ANFANGEN MÖCHTEST? ALLES GEHT VERLOREN.</are_you_sure_restart>
+		<time_bonus>ZEITBONUS: </time_bonus>		
+		<YES>JA</YES>
+		<NO>NEIN</NO>
+		<RESTART>NEUSTART</RESTART>
+	</language>	
+		
+	<language name="it">
+		<play>PLAY</play>
+		<menu>MENU</menu>
+		<time>TEMPO: </time>
+		<best>BEST: </best>
+		<draw_1_card>1 CARTA</draw_1_card>
+		<draw_3_card>3 CARTE</draw_3_card>
+		<HOW_TO_PLAY_FULL>Sposta tutte le carte nelle 4 caselle vuote, mettendole in ordine dall'asso al re. Puoi giocare con 1 carta o con 3 carte contemporaneamente.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>HAI VINTO!</YOU_WIN>
+		<BONUS>BONUS TEMPO: </BONUS>
+		<SCORE>PUNTi: </SCORE>
+		<TOTAL>PUNTI TOTALI: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>		
+		<new_game>NUOVO GIOCO</new_game>
+		<restart_game>RIAVVIO DEL GIOCO</restart_game>
+		<sound_on>VOLUME ACCESSO</sound_on>
+		<sound_off>VOLUME SPENTO</sound_off>
+		<more_games>PIÙ GIOCHI</more_games>
+		<are_you_sure_new>Sei sicuro di volere cominciare un nuovo gioco? Perderai tutto.</are_you_sure_new>
+		<are_you_sure_restart>Sei sicuro di volere riavviare questo gioco? Perderai tutto.</are_you_sure_restart>
+		<time_bonus>BONUS TEMPO: </time_bonus>		
+		<YES>SI</YES>
+		<NO>NO</NO>
+		<RESTART>ANCORA</RESTART>		
+	</language>	
+		
+	<language name="pl">
+		<play>PLAY</play>
+		<menu>MENU</menu>
+		<time>CZAS: </time>
+		<best>REK.: </best>
+		<draw_1_card>1 KARTA</draw_1_card>
+		<draw_3_card>3 KARTY</draw_3_card>
+		<HOW_TO_PLAY_FULL>Przenies wszystkie karty do 4 pol bazowych, w kolejnosci od Asa do króla. Graj jedna badz trzema kartami.
+		</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>GRATULACJE</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>Wynik: </SCORE>
+		<TOTAL>Wynik Koncowy: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>		
+		<new_game>NOWA GRA</new_game>
+		<restart_game>ZRESTARTUJ GRE</restart_game>
+		<sound_on>DZWIEK WLACZONY</sound_on>
+		<sound_off>DZWIEK WYLACZONY</sound_off>
+		<more_games>WIECEJ GIER</more_games>
+		<are_you_sure_new>Czy na pewno chcesz rozpoczac nowa gre? Wszystkie dane znikna.</are_you_sure_new>
+		<are_you_sure_restart>Czy na pewno chcesz rozpoczac gre od poczatku? Wszystkie dane znikna.</are_you_sure_restart>
+		<time_bonus>Dodatkowy Czas: </time_bonus>		
+		<YES>TAK</YES>
+		<NO>NIE</NO>
+		<RESTART>PONOWNIE</RESTART>		
+	</language>		
+	
+	<language name="hr">
+		<play>PLAY</play>
+		<menu>MENU</menu>
+		<time>TIME: </time>
+		<best>BEST: </best>
+		<draw_1_card>DRAW 1 CARD</draw_1_card>
+		<draw_3_card>DRAW 3 CARDS</draw_3_card>
+		<HOW_TO_PLAY_FULL>The goal in this Solitaire game is to move all the cards to the four empty stacks in order from ace to king. You can choose to deal 1 card at a time or 3. 
+		</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>HOW TO PLAY</HOW_TO_PLAY>
+		<YOU_WIN>YOU WIN!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>SCORE: </SCORE>
+		<TOTAL>TOTAL: </TOTAL>
+		<GAME_OVER>YOU LOST!</GAME_OVER>		
+		<new_game>NEW GAME</new_game>
+		<restart_game>RESTART GAME</restart_game>
+		<sound_on>SOUND ON</sound_on>
+		<sound_off>SOUND OFF</sound_off>
+		<more_games>MORE GAMES</more_games>
+		<are_you_sure_new>Are you sure you want to start a new game? All progress will be lost</are_you_sure_new>
+		<are_you_sure_restart>Are you sure you want to restart?All progress will be lost!</are_you_sure_restart>
+		<time_bonus>TIME BONUS: </time_bonus>		
+		<YES>YES</YES>
+		<NO>NO</NO>
+		<RESTART>RESTART</RESTART>		
+	</language>	
+	
+	<language name="se">
+		<play>SPELA</play>
+		<menu>MENY</menu>
+		<time>TID: </time>
+		<best>BÄSTA: </best>
+		<draw_1_card>DELA 1 KORT</draw_1_card>
+		<draw_3_card>DELA 3 KORT</draw_3_card>
+		<HOW_TO_PLAY_FULL>Målet i detta Harpan-spel är att flytta alla korten till de tomma kolumnerna i ordning från Ess till Kung. Du kan spela en kort eller tre kort på en gång.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>INSTRUKTIONER</HOW_TO_PLAY>
+		<YOU_WIN>DU VANN!</YOU_WIN>
+		<BONUS>TIDSBONUS: </BONUS>
+		<SCORE>POÄNG: </SCORE>
+		<TOTAL>TOTALPOÄNG: </TOTAL>
+		<GAME_OVER>DU HAR FÖRLORAT!</GAME_OVER>
+		<new_game>NYTT SPEL</new_game>
+		<restart_game>STARTA OM SPEL</restart_game>
+		<sound_on>LJUD PÅ</sound_on>
+		<sound_off>LJUD AV</sound_off>
+		<more_games>FLER SPEL?</more_games>
+		<are_you_sure_new>Är du säker på att du vill börja ett nytt spel? Alla framsteg kommer att gå förlorade!</are_you_sure_new>
+		<are_you_sure_restart>Är du säker på att du vill starta om? Alla framsteg kommer att gå förlorade!</are_you_sure_restart>
+		<time_bonus>TIDSBONUS: </time_bonus>
+		<YES>JA</YES>
+		<NO>NEJ</NO>
+		<RESTART>STARTA OM</RESTART>		
+	</language>	
+	
+	<language name="fi">
+		<play>PELATA</play>
+		<menu>VALIKKO</menu>
+		<time>AIKA: </time>
+		<best>PARAS: </best>
+		<draw_1_card>1 KORTTI</draw_1_card>
+		<draw_3_card>3 KORTTIA</draw_3_card>
+		<HOW_TO_PLAY_FULL>Siirrä kaikki kortit neljään tyhjään kohtaan järjestyksessä ässästä kuninkaaseen. Pelaa 1 tai 3 kortilla.</HOW_TO_PLAY_FULL>
+		<HOW_TO_PLAY>OHJEET</HOW_TO_PLAY>
+		<YOU_WIN>ONNITTELUT!</YOU_WIN>
+		<BONUS>BONUS: </BONUS>
+		<SCORE>PISTEET: </SCORE>
+		<TOTAL>TULOS: </TOTAL>
+		<GAME_OVER>PELI OHI!</GAME_OVER>			
+		<new_game>UUSI PELI</new_game>
+		<restart_game>ALOITA UUDELLEEN</restart_game>
+		<sound_on>ÄÄNET PÄÄLLÄ</sound_on>
+		<sound_off>ÄÄNET POIS PÄÄLTÄ</sound_off>
+		<more_games>LISÄÄ PELEJÄ</more_games>
+		<are_you_sure_new>Oletko varma, että haluat aloittaa uuden pelin? Menetät kaiken.</are_you_sure_new>
+		<are_you_sure_restart>Oletko varma, että haluat aloittaa tämän pelin uudelleen? Menetät kaiken.</are_you_sure_restart>
+		<time_bonus>AIKA BONUS: </time_bonus>	
+		<YES>KYLLÄ</YES>
+		<NO>EI</NO>
+		<RESTART>UUDELLEEN</RESTART>		
+	</language>	
+
+</data>
