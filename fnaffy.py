@@ -12,8 +12,7 @@ from tqdm import tqdm
 
 # ------------ CONFIG ------------
 SLUGS = [
-    "temple-run-2",
-    "time-shooter-3"
+    "word-wipe",
 ]
 GAME_BASE = "https://nhnet.github.io/stunning-invention/{slug}"
 

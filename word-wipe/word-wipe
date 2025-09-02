@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Word Wipe</title>
+    <script>
+		if (window.self === window.top) {
+		    var gLoc = window.location.pathname;
+		    var gPath = gLoc.substring(0, gLoc.lastIndexOf('/'));
+		    var gName = gPath.substring(gPath.lastIndexOf("/") + 1);
+		    window.location.replace('../../../../' + gName + '-game/');
+		}
+	</script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+      html,
+      body {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        height: 100%;
+      }
+    </style>
+    <script defer="defer" src="main.js?3868a11d1fe40b29703b"></script>
+  </head>
+  <body style="overflow: hidden">
+    <div id="gamePlace" style="height: 100%; overflow: hidden"></div>
+  </body>
+</html>
