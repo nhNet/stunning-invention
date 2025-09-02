@@ -12,9 +12,8 @@ from tqdm import tqdm
 
 # ------------ CONFIG ------------
 SLUGS = [
-    "pixel-shooter",
-    "subway-surfers",
-    "super-mario-bros"
+    "temple-run-2",
+    "time-shooter-3"
 ]
 GAME_BASE = "https://nhnet.github.io/stunning-invention/{slug}"
 
