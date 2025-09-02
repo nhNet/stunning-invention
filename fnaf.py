@@ -8,8 +8,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 # -------- Config --------
-BASE = "https://watchdocumentaries.com/wp-content/uploads/games/solitaire/"
-OUT_DIR = "solitaire"
+BASE = "https://watchdocumentaries.com/wp-content/uploads/games/monkey-mart/"
+OUT_DIR = "monkey-mart"
 URLS_TXT = "filelist.txt"
 
 MAX_WORKERS = 8          # number of concurrent downloads

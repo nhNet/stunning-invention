@@ -6,8 +6,6 @@ from playwright.async_api import async_playwright
 
 # ------------ CONFIG ------------
 SLUGS = [
-    "monkey-mart",
-    "solitaire",
     "sprinter",
     "stickman-hook",
     "subway-surfers",
