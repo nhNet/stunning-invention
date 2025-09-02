@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 # -------- Config --------
-OUT_DIR = "word-wipe"
+OUT_DIR = "x-trench-run"
 BASE = "https://watchdocumentaries.com/wp-content/uploads/games/"+OUT_DIR+"/"
 URLS_TXT = "filelist.txt"
 
