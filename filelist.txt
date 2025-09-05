@@ -1,5 +1,8 @@
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_curve_a.glb
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_curve_b.glb
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_curve_c.glb
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_curve_d.glb
-https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_curve_e.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_a.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_b.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_c.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_d.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_e.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_f.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_g.glb
+https://watchdocumentaries.com/wp-content/uploads/games/temple-run-2/assets/tracks/Machu/MineCart/mine_duck_h.glb
